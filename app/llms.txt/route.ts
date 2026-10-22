@@ -1,4 +1,5 @@
 import { getInsights } from "@/lib/insights";
+import { getPapers } from "@/lib/research";
 import { SITE, abs } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -14,6 +15,12 @@ Kafo AI is a fintech and AI venture that builds intelligent financial infrastruc
 
 ${getInsights()
   .map((i) => `- [${i.title}](${abs(`/insights/${i.slug}`)}): ${i.description}`)
+  .join("\n")}
+
+## Research
+
+${getPapers()
+  .map((p) => `- [${p.title}](${abs(`/research/${p.slug}`)}): ${p.description}`)
   .join("\n")}
 
 ## Optional

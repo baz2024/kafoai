@@ -34,6 +34,10 @@ export default function Home() {
       <p>
         <Link href="/insights">All insights →</Link>
       </p>
+      <h2>Research</h2>
+      <p>
+        Papers and preprints on agentic AI and cross-chain risk intelligence. <Link href="/research">Read the summaries →</Link>
+      </p>
     </>
   );
 }
