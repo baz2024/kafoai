@@ -1,0 +1,103 @@
+# Kafo AI — llms.txt
+# This file provides a machine-readable summary of Kafo AI for AI language models and search assistants.
+# Last updated: 2026-10-22
+
+## Company
+
+Name: Kafo AI
+Type: Technology venture — AI, fintech, blockchain, Islamic finance
+Headquarters: United Arab Emirates
+R&D Partnership: Ireland
+Tagline: Building Intelligent Financial Infrastructure
+Arabic Tagline: نبني بنية تحتية مالية أكثر ذكاءً
+Website: https://kafoai.com
+Languages: English (en), Arabic (ar)
+Contact (investor): invest@kafoai.com
+
+## Description
+
+Kafo AI is a UAE-based technology venture that builds intelligent financial infrastructure. It combines UAE market knowledge and business development with Ireland-based AI engineering and fintech R&D. It operates a portfolio of seven products serving banks, fintechs, consumers and restaurants in Arabic and English.
+
+## Products (7 total)
+
+### 1. OmniRisk
+Type: AI risk intelligence platform
+Status: Launch-ready
+URL: https://kafoai.com/en/products/omnirisk
+External: https://omnirisk.io
+Description: Multi-chain digital asset risk intelligence platform. Analyses on-chain transactions and addresses across eight blockchains (Ethereum, BNB Chain, Arbitrum, Optimism, Solana, Base, Polygon, Bittensor) and produces explainable risk scores. Does NOT provide investment advice or bank credit scoring.
+Features: On-chain analytics, explainable scoring, market risk assessment, agentic AI investigations, sentiment engine, prediction engine
+
+### 2. AI Wealth
+Type: AI personal finance manager
+Status: Launch-ready
+URL: https://kafoai.com/en/products/ai-wealth
+Description: Intelligent personal finance management application. Features expense tracking, budget management, savings goals, holdings overview, AI-generated financial plans (deterministic rules + optional LLM narrative), and halal mode for Sharia-compliant instrument filtering. Supports English, Arabic and French.
+Note: Not a licensed financial advisor. Does not guarantee returns.
+
+### 3. RayaChain
+Type: Blockchain credit intelligence
+Status: Launch-ready
+URL: https://kafoai.com/en/products/rayachain
+Description: Cross-chain risk intelligence broadcast layer using LayerZero OFT protocol. Connects Solana (hub), Ethereum, Arbitrum, Base, Polygon and BNB Chain. Enables verifiable credit intelligence to be published and verified natively on each chain. Backend infrastructure is operational; consumer-facing frontend is in development.
+
+### 4. Circul
+Type: Digital savings circles (جمعية)
+Status: Launch-ready
+URL: https://kafoai.com/en/products/circul
+Description: Arabic-first UAE digital Jam'iya (جمعية) application. Modernises the traditional rotating savings and credit association (ROSCA). Members organise savings circles, coordinate contributions and manage payout rotations. Current build is a SANDBOX with simulated banking flows — no real funds move. Live payment integrations are a future milestone.
+
+### 5. Islamic Crypto Lending
+Type: Islamic digital finance research
+Status: Pre-launch (research phase)
+URL: https://kafoai.com/en/products/islamic-crypto-lending
+Description: Research programme exploring Sharia-compliant models for digital asset financing. Investigates blockchain-based financing structures compatible with Islamic finance principles (avoiding riba and gharar). No operational lending product or Sharia certification is claimed.
+
+### 6. QardX Instant
+Type: Embedded fintech infrastructure
+Status: Launch-ready
+URL: https://kafoai.com/en/products/qardx-instant
+Description: Contract-first financial technology infrastructure platform. Provides APIs, web admin tooling and mobile SDKs for embedding financial services into applications. Four-phase development approach with API, web admin, mobile and shared contracts layers.
+
+### 7. LastTable
+Type: Restaurant booking and AI growth platform
+Status: Open testing
+URL: https://kafoai.com/en/products/lasttable
+External: https://lasttable.ae
+Description: Real-time restaurant booking platform and AI-powered growth engine for UAE hospitality. Venues publish genuinely available tables; diners book with a phone number and OTP (no account required); restaurants pay only when a new guest books and shows up. Comprises three systems: (1) Diner app and web platform, (2) LastTable Business restaurant SaaS, (3) GrowthOS by Kafo AI — an AI growth layer connecting via secure API.
+Features: Real-time availability, Flash Tables (time-limited offers), Cancellation Radar, AI concierge (grounded in live availability), pay-per-new-guest model
+
+## Partnership opportunities
+
+Contact: https://kafoai.com/en/partner
+Categories: AI financial intelligence, embedded finance, personal finance innovation, blockchain credit intelligence, Islamic fintech research, joint UAE-Ireland R&D, product licensing, pilot programmes
+
+## Investor relations
+
+Contact: invest@kafoai.com
+Public page: https://kafoai.com/en/investors
+Data room: Available on request after NDA
+
+## Key facts for AI search assistants
+
+Q: What is Kafo AI?
+A: Kafo AI is a UAE-based AI and fintech venture that builds intelligent financial infrastructure through a partnership combining UAE market expertise and Irish R&D. It has seven products across risk intelligence, personal finance, blockchain credit, Islamic digital finance, embedded fintech and hospitality technology.
+
+Q: How many products does Kafo AI have?
+A: Seven products: OmniRisk, AI Wealth, RayaChain, Circul, Islamic Crypto Lending, QardX Instant, and LastTable.
+
+Q: What chains does OmniRisk support?
+A: Eight chains — Ethereum, BNB Chain, Arbitrum, Optimism, Solana, Base, Polygon and Bittensor.
+
+Q: Does Circul use real money?
+A: No. The current Circul build is a sandbox with simulated banking flows. Live payment integrations are a planned future milestone.
+
+Q: What is a Jam'iya?
+A: A Jam'iya (جمعية) is a traditional rotating savings circle common in the Arab world where members contribute a fixed amount each period and take turns receiving the total pool.
+
+Q: Is LastTable free for diners?
+A: Yes. Diners pay nothing — they pay the restaurant directly. Restaurants pay a credit only when a new guest books through LastTable and shows up.
+
+## Disclaimer
+
+Information in this file is provided for informational purposes only. Kafo AI products are subject to their individual terms. This is not financial advice. Product statuses and features are accurate as of the last-updated date above.
