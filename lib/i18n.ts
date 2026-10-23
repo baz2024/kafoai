@@ -144,6 +144,10 @@ export type Product = {
   desc: Bi;
   seoTitle: Bi;
   external?: { url: string; label: string };
+  // Further verified, live websites for the same product (for example a second market).
+  links?: { url: string; label: string }[];
+  // A short status line shown under the hero buttons.
+  note?: Bi;
   features?: { t: Bi; d: Bi; status?: string }[];
   faq?: { q: Bi; a: Bi }[];
   steps?: { t: Bi; d: Bi }[];
@@ -188,6 +192,7 @@ export const PRODUCTS: Product[] = [
     tagline: { en: "Blockchain credit intelligence", ar: "ذكاء ائتماني على البلوك تشين" },
     desc: { en: "Verifiable credit intelligence recorded on blockchain.", ar: "معلومات ائتمانية قابلة للتحقق مسجّلة على البلوك تشين." },
     seoTitle: { en: "RayaChain | Blockchain Credit Scoring", ar: "RayaChain | التقييم الائتماني بالبلوك تشين — كافو AI" },
+    external: { url: "https://rayachain.omnirisk.io", label: "rayachain.omnirisk.io" },
     banks: true,
   },
   {
@@ -196,6 +201,11 @@ export const PRODUCTS: Product[] = [
     tagline: { en: "Digital savings circles", ar: "جمعيات ادخار رقمية" },
     desc: { en: "An Arabic-first digital Jam’iya for contributions and payout rotations.", ar: "جمعية رقمية بالعربية أولاً لتنظيم المساهمات وأدوار الاستلام." },
     seoTitle: { en: "Circul | Digital Savings Circle (Jam’iya)", ar: "Circul | جمعية رقمية للادخار — كافو AI" },
+    external: { url: "https://circul.kafoai.com", label: "circul.kafoai.com" },
+    note: {
+      en: "The iOS and Android apps are in review with the Apple App Store and Google Play. Store links will be added once they are approved.",
+      ar: "تطبيقا iOS وAndroid قيد المراجعة لدى آب ستور وجوجل بلاي. وسنضيف روابط المتجرين فور الموافقة عليهما.",
+    },
   },
   {
     slug: "islamic-finance",
@@ -222,6 +232,11 @@ export const PRODUCTS: Product[] = [
     },
     seoTitle: { en: "LastTable | AI Revenue Engine for Restaurants", ar: "LastTable | محرك إيرادات ذكي للمطاعم — كافو AI" },
     external: { url: "https://lasttable.ae", label: "lasttable.ae" },
+    links: [{ url: "https://lasttable.ie", label: "lasttable.ie" }],
+    note: {
+      en: "The iOS and Android apps are in review with the Apple App Store and Google Play. Store links will be added once they are approved. Until then, book on the web at app.lasttable.ae.",
+      ar: "تطبيقا iOS وAndroid قيد المراجعة لدى آب ستور وجوجل بلاي. وسنضيف روابط المتجرين فور الموافقة عليهما. وإلى ذلك الحين يمكنك الحجز عبر الويب على app.lasttable.ae.",
+    },
     steps: [
       { t: { en: "See what is really free", ar: "اطّلع على الطاولات المتاحة فعلاً" }, d: { en: "Every time slot shown is a table the venue has open right now, from the same system it books on.", ar: "كل موعد معروض هو طاولة متاحة لدى المطعم الآن، من النظام نفسه الذي يحجز عليه." } },
       { t: { en: "Book with your phone number", ar: "احجز برقم هاتفك" }, d: { en: "The table is held for five minutes while you confirm with a one-time code. No account, no card.", ar: "تُحجز الطاولة خمس دقائق ريثما تؤكد برمز لمرة واحدة. دون حساب ودون بطاقة." } },

@@ -36,6 +36,7 @@ export default async function ProductPage({ params }: P) {
   if (!isLang(lang) || !p) notFound();
   const url = abs(`/${lang}/products/${slug}`);
   const related = PRODUCTS.filter((x) => x.slug !== slug && (p.banks ? x.banks : true)).slice(0, 3);
+  const sites = [p.external, ...(p.links ?? [])].filter((s): s is { url: string; label: string } => Boolean(s));
   const shots = getShots(slug, lang);
   const desktop = shots.filter((s) => s.device === "desktop");
   const mobile = shots.filter((s) => s.device === "mobile");
@@ -54,7 +55,7 @@ export default async function ProductPage({ params }: P) {
             url,
             inLanguage: lang,
             publisher: { "@id": ORG_ID },
-            ...(p.external ? { sameAs: [p.external.url] } : {}),
+            ...(sites.length ? { sameAs: sites.map((s) => s.url) } : {}),
           },
           { "@type": "WebPage", "@id": `${url}#webpage`, url, name: p.seoTitle[lang], inLanguage: lang, about: { "@id": `${SITE_URL}/products/${slug}#app` } },
           {
@@ -82,12 +83,17 @@ export default async function ProductPage({ params }: P) {
                 <Link href={href(lang, "/partner")} className="btn">
                   {UI.partner.cta[lang]} <Arrow />
                 </Link>
-                {p.external && (
-                  <a href={p.external.url} rel="noopener" className="btn ghost">
-                    {UI.visit[lang]} {p.external.label} ↗
+                {sites.map((s) => (
+                  <a key={s.url} href={s.url} rel="noopener" className="btn ghost">
+                    {UI.visit[lang]} {s.label} ↗
                   </a>
-                )}
+                ))}
               </div>
+              {p.note && (
+                <p className="meta" style={{ maxWidth: "62ch", marginTop: "var(--s-4)" }}>
+                  {p.note[lang]}
+                </p>
+              )}
             </div>
             <section className="glance">
               <h2>{ask}</h2>
