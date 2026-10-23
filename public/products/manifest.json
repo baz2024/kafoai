@@ -1,0 +1,236 @@
+{
+  "omnirisk": [
+    {
+      "file": "/products/omnirisk/hero-score-desktop.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "OmniRisk homepage showing an AI risk assistant panel with an Ethereum risk score of 88.5, a hold recommendation and signal breakdown bars.",
+        "ar": "الصفحة الرئيسية لأومني ريسك تعرض لوحة مساعد ذكي لتقييم المخاطر مع درجة مخاطر إيثريوم 88.5 وتوصية بالاحتفاظ ومؤشرات الإشارات."
+      },
+      "device": "desktop",
+      "source": "public website"
+    },
+    {
+      "file": "/products/omnirisk/leaderboard-desktop.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "OmniRisk leaderboard table of major crypto assets with price, 24-hour volume, 24-hour change and a risk score for each token.",
+        "ar": "جدول ترتيب في أومني ريسك لأبرز العملات المشفرة مع السعر وحجم التداول خلال 24 ساعة والتغير ودرجة المخاطر لكل عملة."
+      },
+      "device": "desktop",
+      "source": "public website"
+    },
+    {
+      "file": "/products/omnirisk/dashboard-preview-desktop.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "OmniRisk live intelligence dashboard preview with token scores, scenario outcomes and portfolio exposure.",
+        "ar": "معاينة للوحة أومني ريسك الحية تعرض درجات العملات ونتائج السيناريوهات وتوزيع المحفظة."
+      },
+      "device": "desktop",
+      "source": "public website"
+    }
+  ],
+  "ai-wealth": [
+    {
+      "file": "/products/ai-wealth/portfolio-mobile.webp",
+      "width": 780,
+      "height": 1688,
+      "alt": {
+        "en": "AI Wealth demo mode on a phone: sample net worth in dirhams, a donut chart of allocation and a list of holdings such as sukuk fund, gold and cash.",
+        "ar": "تطبيق إيه آي ويلث في الوضع التجريبي على الهاتف: صافي ثروة تجريبي بالدرهم ورسم دائري للتوزيع وقائمة أصول مثل صندوق الصكوك والذهب والنقد."
+      },
+      "device": "mobile",
+      "source": "local demo data"
+    },
+    {
+      "file": "/products/ai-wealth/example-plan-mobile.webp",
+      "width": 780,
+      "height": 1688,
+      "alt": {
+        "en": "AI Wealth example plan screen showing an illustrative target allocation across equity, sukuk, gold and cash.",
+        "ar": "شاشة الخطة التجريبية في إيه آي ويلث تعرض توزيعاً مستهدفاً توضيحياً بين الأسهم والصكوك والذهب والنقد."
+      },
+      "device": "mobile",
+      "source": "local demo data"
+    }
+  ],
+  "rayachain": [
+    {
+      "file": "/products/rayachain/route-health-desktop.webp",
+      "width": 2520,
+      "height": 1575,
+      "alt": {
+        "en": "RayaChain route health dashboard with uptime, median latency, liquidity and a latency matrix between chains.",
+        "ar": "لوحة صحة المسارات في رايا تشين تعرض نسبة التشغيل ومتوسط زمن الاستجابة والسيولة ومصفوفة زمن الاستجابة بين السلاسل."
+      },
+      "device": "desktop",
+      "source": "public website"
+    },
+    {
+      "file": "/products/rayachain/risk-broadcast-desktop.webp",
+      "width": 2520,
+      "height": 1575,
+      "alt": {
+        "en": "RayaChain risk broadcast page with signal statistics, topic channels and a live signal feed.",
+        "ar": "صفحة بث المخاطر في رايا تشين مع إحصاءات الإشارات وقنوات المواضيع وتدفق مباشر للإشارات."
+      },
+      "device": "desktop",
+      "source": "public website"
+    }
+  ],
+  "circul": [
+    {
+      "file": "/products/circul/landing-mobile-ar.webp",
+      "width": 780,
+      "height": 1688,
+      "alt": {
+        "en": "Circul Arabic welcome screen on a phone with a sandbox savings circle of six members and 500 dirhams monthly each.",
+        "ar": "شاشة الترحيب العربية في سيركل على الهاتف مع جمعية تجريبية من ستة أعضاء بمساهمة 500 درهم شهرياً لكل عضو."
+      },
+      "device": "mobile",
+      "source": "local demo data"
+    },
+    {
+      "file": "/products/circul/home-mobile-ar.webp",
+      "width": 780,
+      "height": 1688,
+      "alt": {
+        "en": "Circul Arabic home screen with the next 500 dirham contribution due and the member's payout turn.",
+        "ar": "الشاشة الرئيسية العربية في سيركل مع موعد الدفعة القادمة 500 درهم ودور العضو في الاستلام."
+      },
+      "device": "mobile",
+      "source": "local demo data"
+    },
+    {
+      "file": "/products/circul/circle-detail-mobile-ar.webp",
+      "width": 780,
+      "height": 1688,
+      "alt": {
+        "en": "Circul circle detail in Arabic showing cycle 1 of 6, confirmed contributions and the payout order of members.",
+        "ar": "تفاصيل الجمعية في سيركل بالعربية تعرض الدورة 1 من 6 والمساهمات المؤكدة وترتيب استلام الأعضاء."
+      },
+      "device": "mobile",
+      "source": "local demo data"
+    }
+  ],
+  "lasttable": [
+    {
+      "file": "/products/lasttable/venue-dashboard-desktop.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "LastTable venue dashboard with today's reservations, covers, free tables, an hourly booking chart, a floor view and next arrivals.",
+        "ar": "لوحة مطعم لاست تيبل تعرض حجوزات اليوم وعدد الضيوف والطاولات الشاغرة ومخططاً ساعياً للحجوزات وخريطة الطاولات والوافدين التاليين."
+      },
+      "device": "desktop",
+      "source": "local demo data"
+    },
+    {
+      "file": "/products/lasttable/venue-growth-desktop.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "LastTable growth manager screen with an approval feed of suggested offers, a wallet and an empty-seat forecast.",
+        "ar": "شاشة مدير النمو في لاست تيبل مع قائمة عروض مقترحة بانتظار الموافقة ومحفظة وتوقعات المقاعد الشاغرة."
+      },
+      "device": "desktop",
+      "source": "local demo data"
+    },
+    {
+      "file": "/products/lasttable/diner-discover-mobile.webp",
+      "width": 780,
+      "height": 1688,
+      "alt": {
+        "en": "LastTable diner app on a phone showing tonight's deals, available tables and restaurants in Dubai.",
+        "ar": "تطبيق لاست تيبل للضيوف على الهاتف يعرض عروض الليلة والطاولات المتاحة ومطاعم في دبي."
+      },
+      "device": "mobile",
+      "source": "local demo data"
+    }
+  ],
+  "meithera": [
+    {
+      "file": "/products/meithera/marketplace-desktop.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "Meithera demo property marketplace page under a banner saying it is a demonstration platform with no real investments, with a notice that the properties are illustrative and not investment offers, and the first fictional property cards.",
+        "ar": "صفحة سوق العقارات في النسخة التجريبية من ميثيرا تحت شريط يوضح أنها منصة تجريبية بلا استثمارات حقيقية، مع تنبيه بأن العقارات توضيحية وليست عروض استثمار، وأولى بطاقات العقارات الخيالية."
+      },
+      "device": "desktop",
+      "source": "public demo website"
+    },
+    {
+      "file": "/products/meithera/raya-chain-audit-desktop.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "Meithera Raya Chain audit console in the demo, marked as simulated in the browser, showing block height, transactions, holders, a feed of illustrative loan interest and holding records, and a list of latest blocks.",
+        "ar": "وحدة تدقيق رايا تشين في النسخة التجريبية من ميثيرا، موضّحة بأنها محاكاة داخل المتصفح، وتعرض ارتفاع الكتلة والمعاملات والحاملين وسجلات توضيحية لفوائد القروض والحيازات وقائمة بأحدث الكتل."
+      },
+      "device": "desktop",
+      "source": "public demo website"
+    },
+    {
+      "file": "/products/meithera/property-detail-desktop.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "Meithera demo property page for a fictional two-bedroom home in Dublin 8, with a photo gallery labelled as representative and not the actual property, and a 6.21 percent property net yield marked as not the investor's return.",
+        "ar": "صفحة عقار تجريبي في ميثيرا لشقة خيالية من غرفتي نوم في دبلن 8 مع معرض صور موسوم بأنه تمثيلي وليس العقار الفعلي، ودخل صافٍ للعقار 6.21 بالمئة موضّح بأنه ليس عائد المستثمر."
+      },
+      "device": "desktop",
+      "source": "public demo website"
+    }
+  ],
+  "growthos": [
+    {
+      "file": "/products/growthos/overview-metrics.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "KAFO AI pilot overview for a demo restaurant workspace, showing an approvals-waiting prompt, four metric cards (completed bookings, confirmed bookings, attendance rate, estimated revenue) with trend sparklines, a daily bookings bar chart and a needs-attention list, marked as synthetic demo data.",
+        "ar": "نظرة عامة على التجربة في كفو للذكاء الاصطناعي لمساحة عمل مطعم تجريبي، تعرض تنبيهًا بالموافقات المعلّقة وأربع بطاقات مؤشرات (الحجوزات المكتملة والمؤكدة ونسبة الحضور والإيراد التقديري) مع رسوم اتجاه، ومخططًا يوميًا للحجوزات وقائمة بما يحتاج انتباهًا، وكلها بيانات محاكاة."
+      },
+      "device": "desktop",
+      "source": "local demo data"
+    },
+    {
+      "file": "/products/growthos/agent-run-claims-check.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "A finished KAFO AI agent run on the Agents page, showing status Succeeded, cost, prompt version, a claims check that passed with no policy findings, and drafted outreach emails and a landing page tagged with the approved knowledge facts they cite. Demo data on a mock runtime.",
+        "ar": "تشغيل مكتمل لوكيل في كفو للذكاء الاصطناعي على صفحة الوكلاء، يعرض حالة النجاح والتكلفة وإصدار التوجيه ونتيجة فحص الادعاءات دون ملاحظات، ومسودات رسائل تواصل وصفحة هبوط موسومة بالحقائق المعتمدة التي استندت إليها. بيانات تجريبية على بيئة محاكاة."
+      },
+      "device": "desktop",
+      "source": "local demo data"
+    },
+    {
+      "file": "/products/growthos/approvals-diff.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "KAFO AI Approvals page for a demo workspace, showing a pending landing-page request with channel, budget and content hash, changed audience and copy highlighted against the last approved version, and a no claims findings check.",
+        "ar": "صفحة الموافقات في كفو للذكاء الاصطناعي لمساحة عمل تجريبية، تعرض طلب صفحة هبوط معلّقًا مع القناة والميزانية وبصمة المحتوى، وتُبرز تغييرات الجمهور والنص مقارنة بآخر نسخة موافق عليها، مع فحص خالٍ من ملاحظات الادعاءات."
+      },
+      "device": "desktop",
+      "source": "local demo data"
+    },
+    {
+      "file": "/products/growthos/agents-arabic.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "KAFO AI Agents page in the Arabic right-to-left interface, showing three enabled agent roles (acquisition research and content, analytics and conversion, growth director) with their allowed tools, and a form to queue a task. Demo data, mock runtime.",
+        "ar": "صفحة الوكلاء في كفو للذكاء الاصطناعي بالواجهة العربية من اليمين إلى اليسار، تعرض ثلاثة أدوار مفعّلة للوكلاء (أبحاث الاستقطاب والمحتوى، التحليلات والتحويل، مدير النمو) مع الأدوات المسموح بها ونموذجًا لإضافة مهمة. بيانات تجريبية على بيئة محاكاة."
+      },
+      "device": "desktop",
+      "source": "local demo data"
+    }
+  ]
+}
