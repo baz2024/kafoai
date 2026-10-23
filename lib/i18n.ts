@@ -175,9 +175,12 @@ export const PRODUCTS: Product[] = [
   {
     slug: "ai-wealth",
     name: "AI Wealth",
-    tagline: { en: "Personal finance manager", ar: "مدير مالي شخصي" },
-    desc: { en: "Expenses, budgets, savings goals and holdings in one clear view.", ar: "المصروفات والميزانيات وأهداف الادخار والأصول في عرض واحد واضح." },
-    seoTitle: { en: "AI Wealth | AI Personal Finance App", ar: "AI Wealth | تطبيق إدارة المصاريف الشخصية — كافو AI" },
+    tagline: { en: "AI personal finance manager (PFM)", ar: "مدير مالي شخصي بالذكاء الاصطناعي (PFM)" },
+    desc: {
+      en: "An AI personal finance manager (PFM): expenses, budgets, savings goals and holdings in one clear view.",
+      ar: "مدير مالي شخصي بالذكاء الاصطناعي (PFM): المصروفات والميزانيات وأهداف الادخار والأصول في عرض واحد واضح.",
+    },
+    seoTitle: { en: "AI Wealth | AI Personal Finance Manager (PFM)", ar: "AI Wealth | مدير مالي شخصي بالذكاء الاصطناعي — كافو AI" },
   },
   {
     slug: "rayachain",
