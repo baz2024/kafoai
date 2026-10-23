@@ -11,8 +11,8 @@ type P = { params: Promise<{ lang: string }> };
 export async function generateMetadata({ params }: P): Promise<Metadata> {
   const { lang } = await params;
   if (!isLang(lang)) return {};
-  const title = lang === "ar" ? "منتجات كافو AI | الذكاء الاصطناعي والتقنية المالية" : "Products | Seven AI and Fintech Products";
-  const description = lang === "ar" ? "سبعة منتجات: OmniRisk وAI Wealth وRayaChain وCircul والتمويل الرقمي الإسلامي وQardX Instant وLastTable." : "OmniRisk, AI Wealth, RayaChain, Circul, Islamic digital finance, QardX Instant and LastTable: seven AI and fintech products from Kafo AI.";
+  const title = lang === "ar" ? "منتجات كافو AI | الذكاء الاصطناعي والتقنية المالية" : "Products | Nine AI and Fintech Products";
+  const description = lang === "ar" ? "تسعة منتجات: OmniRisk وAI Wealth وRayaChain وCircul وQardX Instant وLastTable وGrowthOS وMeithera والتمويل الرقمي الإسلامي." : "OmniRisk, AI Wealth, RayaChain, Circul, QardX Instant, LastTable, GrowthOS, Meithera and Islamic finance: nine products from Kafo AI.";
   return { title: { absolute: title }, description, alternates: bothLangs(lang, "/products"), openGraph: { title, description, url: `/${lang}/products` } };
 }
 
@@ -42,7 +42,7 @@ export default async function Products({ params }: P) {
         </div>
       </header>
       <div className="wrap">
-        <div className="grid">
+        <div className="grid cols-3">
           {PRODUCTS.map((p) => (
             <Link key={p.slug} href={href(lang, `/products/${p.slug}`)} className="card product-card">
               <div className="meta">{p.tagline[lang]}</div>

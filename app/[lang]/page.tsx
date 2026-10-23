@@ -122,7 +122,7 @@ export default async function Home({ params }: P) {
             <h2>{UI.portfolio[lang]}</h2>
             <p>{UI.portfolioSub[lang]}</p>
           </div>
-          <div className="grid">
+          <div className="grid cols-3">
             {PRODUCTS.map((p) => (
               <Link key={p.slug} href={href(lang, `/products/${p.slug}`)} className="card product-card">
                 <div className="meta">{p.tagline[lang]}</div>
@@ -133,13 +133,12 @@ export default async function Home({ params }: P) {
                 </span>
               </Link>
             ))}
-            <Link href={href(lang, "/products")} className="card cta-tile">
-              <span>{UI.showcase.all[lang]}</span>
-              <span className="go" aria-hidden="true">
-                <Arrow />
-              </span>
-            </Link>
           </div>
+          <p>
+            <Link href={href(lang, "/products")}>
+              {UI.showcase.all[lang]} <Arrow />
+            </Link>
+          </p>
         </div>
       </section>
 

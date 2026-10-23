@@ -37,8 +37,8 @@ export const UI = {
   ctaPilot: { en: "Discuss a pilot", ar: "ناقش مشروعاً تجريبياً" },
   whatIs: { en: "What is Kafo AI?", ar: "ما هي كافو AI؟" },
   whatIsAnswer: {
-    en: "Kafo AI is a fintech and AI venture that builds intelligent financial infrastructure. Its portfolio of seven products serves banks, fintechs and consumers, in Arabic and English.",
-    ar: "كافو AI شركة ناشئة في الذكاء الاصطناعي والتقنية المالية تبني بنية تحتية مالية ذكية. تضم محفظتها سبعة منتجات تخدم البنوك وشركات التقنية المالية والمستهلكين، بالعربية والإنجليزية.",
+    en: "Kafo AI is a fintech and AI venture that builds intelligent financial infrastructure. Its portfolio of nine products serves banks, fintechs and consumers, in Arabic and English.",
+    ar: "كافو AI شركة ناشئة في الذكاء الاصطناعي والتقنية المالية تبني بنية تحتية مالية ذكية. تضم محفظتها تسعة منتجات تخدم البنوك وشركات التقنية المالية والمستهلكين، بالعربية والإنجليزية.",
   },
   factLabels: {
     focus: { en: "Focus", ar: "التركيز" },
@@ -48,21 +48,21 @@ export const UI = {
   factFocus: { en: "AI, fintech, blockchain, Islamic finance", ar: "الذكاء الاصطناعي، التقنية المالية، البلوك تشين، التمويل الإسلامي" },
   factLanguages: { en: "Arabic, English", ar: "العربية، الإنجليزية" },
   portfolio: { en: "The portfolio", ar: "منظومة المنتجات" },
-  portfolioSub: { en: "Seven AI and fintech products", ar: "سبعة منتجات في الذكاء الاصطناعي والتقنية المالية" },
+  portfolioSub: { en: "Nine AI and fintech products", ar: "تسعة منتجات في الذكاء الاصطناعي والتقنية المالية" },
   pillars: [
     { n: "01", t: { en: "Market", ar: "الأسواق" }, d: { en: "Market knowledge, business development and partner access", ar: "المعرفة بالأسواق وتطوير الأعمال والوصول إلى الشركاء" } },
     { n: "02", t: { en: "R&D", ar: "البحث والتطوير" }, d: { en: "AI engineering, research and fintech product development", ar: "هندسة الذكاء الاصطناعي والأبحاث وتطوير المنتجات المالية" } },
-    { n: "03", t: { en: "Portfolio", ar: "المحفظة" }, d: { en: "Seven AI and fintech products", ar: "سبعة منتجات في الذكاء الاصطناعي والتقنية المالية" } },
+    { n: "03", t: { en: "Portfolio", ar: "المحفظة" }, d: { en: "Nine AI and fintech products", ar: "تسعة منتجات في الذكاء الاصطناعي والتقنية المالية" } },
   ],
   thesis: [
-    { t: { en: "One platform, seven products", ar: "منصة واحدة وسبعة منتجات" }, d: { en: "Shared AI, data and blockchain foundations reduce the cost of each new product.", ar: "أسس مشتركة في الذكاء الاصطناعي والبيانات والبلوك تشين تخفّض كلفة كل منتج جديد." } },
+    { t: { en: "One platform, nine products", ar: "منصة واحدة وتسعة منتجات" }, d: { en: "Shared AI, data and blockchain foundations reduce the cost of each new product.", ar: "أسس مشتركة في الذكاء الاصطناعي والبيانات والبلوك تشين تخفّض كلفة كل منتج جديد." } },
     { t: { en: "Arabic-first by design", ar: "العربية أولاً" }, d: { en: "Native Arabic products and Islamic finance research for a market that is underserved.", ar: "منتجات عربية أصيلة وأبحاث في التمويل الإسلامي لسوق لم يُخدَم بما يكفي." } },
     { t: { en: "Evidence over hype", ar: "الدليل قبل الوعود" }, d: { en: "Every public claim is checked against working code. Stages are reported as they are.", ar: "كل ادعاء علني يُتحقَّق منه مقابل شيفرة فعلية، والمراحل تُعرض كما هي." } },
   ],
   showcase: {
     title: { en: "Our products in action", ar: "منتجاتنا قيد العمل" },
     sub: { en: "Screens from our working products, using demo or public data.", ar: "لقطات من منتجاتنا العاملة، ببيانات تجريبية أو عامة." },
-    all: { en: "See all seven products", ar: "اطّلع على المنتجات السبعة" },
+    all: { en: "See all nine products", ar: "اطّلع على المنتجات التسعة" },
   },
   latestInsights: { en: "Latest insights", ar: "أحدث الرؤى" },
   allInsights: { en: "All insights", ar: "كل الرؤى" },
@@ -110,8 +110,8 @@ export const UI = {
   investors: {
     h1: { en: "Investors", ar: "للمستثمرين" },
     intro: {
-      en: "Kafo AI is building shared AI, data and blockchain infrastructure behind seven fintech products. The next milestone is going live with launch partners.",
-      ar: "تبني كافو AI بنية تحتية مشتركة للذكاء الاصطناعي والبيانات والبلوك تشين خلف سبعة منتجات مالية. المرحلة القادمة هي الإطلاق مع شركاء الإطلاق.",
+      en: "Kafo AI is building shared AI, data and blockchain infrastructure behind nine products. The next milestone is going live with launch partners.",
+      ar: "تبني كافو AI بنية تحتية مشتركة للذكاء الاصطناعي والبيانات والبلوك تشين خلف تسعة منتجات. المرحلة القادمة هي الإطلاق مع شركاء الإطلاق.",
     },
     thesis: { en: "Why Kafo AI", ar: "لماذا كافو AI" },
     how: { en: "How access works", ar: "كيف يتم الوصول" },
@@ -234,6 +234,79 @@ export const PRODUCTS: Product[] = [
       { q: { en: "Is LastTable free for diners?", ar: "هل LastTable مجاني للرواد؟" }, a: { en: "Yes. Diners browse without an account, verify their phone by SMS when they book, and pay the restaurant directly. They never pay in the app.", ar: "نعم. يتصفح الرواد دون حساب، ويتحققون من هواتفهم برسالة نصية عند الحجز، ويدفعون للمطعم مباشرة. لا دفع داخل التطبيق." } },
       { q: { en: "How do venues pay?", ar: "كيف تدفع المطاعم؟" }, a: { en: "Managing tables is free. A venue pays a credit only for a new guest who books through LastTable and shows up.", ar: "إدارة الطاولات مجانية. يدفع المطعم رصيداً فقط عن ضيف جديد يحجز عبر LastTable ويحضر." } },
       { q: { en: "Can I use the app now?", ar: "هل يمكنني استخدام التطبيق الآن؟" }, a: { en: "The app beta is invite-only. Leave your number for a link, or book on the web at app.lasttable.ae.", ar: "النسخة التجريبية للتطبيق بالدعوة فقط. اترك رقمك لتصلك الدعوة، أو احجز عبر الويب على app.lasttable.ae." } },
+    ],
+  },
+  {
+    slug: "growthos",
+    name: "GrowthOS",
+    tagline: { en: "Agentic growth platform", ar: "منصة نمو بالوكلاء الأذكياء" },
+    desc: {
+      en: "A multi-tenant agentic growth platform with an Arabic-first Agent Studio, where AI employees work under owner approval and spend caps.",
+      ar: "منصة نمو متعددة المستأجرين تعمل بالوكلاء الأذكياء، مع استوديو وكلاء عربي أولاً وموظفين بالذكاء الاصطناعي تحت موافقة المالك وحدود الإنفاق.",
+    },
+    seoTitle: { en: "GrowthOS | Agentic AI Growth Platform", ar: "GrowthOS | منصة نمو بالذكاء الاصطناعي — كافو AI" },
+    external: { url: "https://app.kafoai.com", label: "app.kafoai.com" },
+    features: [
+      { t: { en: "Agent Studio", ar: "استوديو الوكلاء" }, d: { en: "Build and manage AI agents in an Arabic-first studio.", ar: "ابنِ وكلاء الذكاء الاصطناعي وأدِرهم في استوديو عربي أولاً." } },
+      { t: { en: "AI Employee Studio", ar: "استوديو الموظفين الأذكياء" }, d: { en: "Set up AI employees and playbooks for a business.", ar: "أعدّ موظفين بالذكاء الاصطناعي وخطط عمل لنشاطك التجاري." } },
+      { t: { en: "Campaign governance", ar: "حوكمة الحملات" }, d: { en: "Campaigns pass through approval and governance controls before anything goes out.", ar: "تمر الحملات عبر ضوابط الموافقة والحوكمة قبل إطلاق أي شيء." } },
+      { t: { en: "Safety controls", ar: "ضوابط الأمان" }, d: { en: "Kill switches, spend caps and audit logs. Live AI runs only in workspaces the owner has approved.", ar: "مفاتيح إيقاف وحدود إنفاق وسجلات تدقيق. ولا يعمل الذكاء الاصطناعي الحي إلا في مساحات عمل وافق عليها المالك." } },
+    ],
+    faq: [
+      {
+        q: { en: "Is GrowthOS live?", ar: "هل GrowthOS متاح الآن؟" },
+        a: {
+          en: "GrowthOS is live in pilot at app.kafoai.com. Today, outbound messages and ad spend are disabled; Kafo Sales (email, replies and meeting booking) is in development.",
+          ar: "GrowthOS متاح تجريبياً على app.kafoai.com. حالياً الرسائل الصادرة والإنفاق الإعلاني معطّلان، وكفو للمبيعات (البريد والردود وحجز الاجتماعات) قيد التطوير.",
+        },
+      },
+      {
+        q: { en: "Who uses GrowthOS?", ar: "من يستخدم GrowthOS؟" },
+        a: {
+          en: "LastTable and Circul connect to GrowthOS as clients. GrowthOS does not change their data.",
+          ar: "يرتبط LastTable وCircul بـ GrowthOS كعميلين. ولا يعدّل GrowthOS بياناتهما.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "meithera",
+    name: "Meithera",
+    tagline: { en: "Fractional property investment (proposed)", ar: "استثمار عقاري جزئي (مقترح)" },
+    desc: {
+      en: "A proposed Irish platform for fractional investment in refurbished homes, shown today as a demonstration with fictional data.",
+      ar: "منصة إيرلندية مقترحة للاستثمار الجزئي في المنازل المجددة، تُعرض اليوم كنموذج تجريبي ببيانات افتراضية.",
+    },
+    seoTitle: { en: "Meithera | Proposed Fractional Property Platform", ar: "Meithera | منصة عقارية مقترحة للملكية الجزئية — كافو AI" },
+    external: { url: "https://meithera.omnirisk.io", label: "meithera.omnirisk.io" },
+    features: [
+      { t: { en: "Home Digital Passport", ar: "جواز المنزل الرقمي" }, d: { en: "Each home has a digital passport and an illustrative returns calculator.", ar: "لكل منزل جواز رقمي وحاسبة توضيحية للعوائد." }, status: "Demonstration" },
+      { t: { en: "Raya Chain register", ar: "سجل Raya Chain" }, d: { en: "In the demonstration, a simulated register shows holders, cap tables and payouts, with an explorer for audit.", ar: "في النموذج التجريبي، يعرض سجل محاكى الملّاك وجداول الملكية والدفعات، مع مستكشف للتدقيق." }, status: "Demonstration" },
+      { t: { en: "Supervisor view", ar: "عرض المشرف" }, d: { en: "An illustrative supervisory view with CSV and JSON export.", ar: "عرض إشرافي توضيحي مع تصدير بصيغتي CSV وJSON." }, status: "Demonstration" },
+      { t: { en: "Tenant to owner", ar: "من مستأجر إلى مالك" }, d: { en: "A simulator for tenants buying into their home over time. This stage would need further authorisation.", ar: "محاكي لشراء المستأجر حصة في منزله تدريجياً. وتحتاج هذه المرحلة إلى ترخيص إضافي." }, status: "Proposed" },
+    ],
+    faq: [
+      {
+        q: { en: "Is Meithera authorised or regulated?", ar: "هل Meithera مرخّصة أو خاضعة للتنظيم؟" },
+        a: {
+          en: "No. Meithera is a demonstration. It is not authorised or regulated by the Central Bank of Ireland, and the Innovation Hub provides guidance, not approval. Every home, person and figure shown is fictional.",
+          ar: "لا. Meithera نموذج تجريبي. وهي غير مرخّصة أو خاضعة لتنظيم البنك المركزي الإيرلندي، وتقدّم Innovation Hub إرشاداً لا موافقة. وكل منزل وشخص ورقم معروض هو افتراضي.",
+        },
+      },
+      {
+        q: { en: "Can I invest through Meithera?", ar: "هل يمكنني الاستثمار عبر Meithera؟" },
+        a: {
+          en: "No. The demonstration has no real investments, payments, identity checks, tokens or wallets.",
+          ar: "لا. لا يتضمن النموذج التجريبي أي استثمارات أو مدفوعات أو فحوص هوية أو رموز أو محافظ حقيقية.",
+        },
+      },
+      {
+        q: { en: "What is the idea?", ar: "ما هي الفكرة؟" },
+        a: {
+          en: "Meithera is proposed to let people fund the refurbishment of vacant homes in small amounts, under EU crowdfunding rules and with a partner first, so more homes come to the market. Any live service would be subject to regulatory assessment.",
+          ar: "تقترح Meithera تمكين الناس من تمويل تجديد المنازل الشاغرة بمبالغ صغيرة، وفق قواعد التمويل الجماعي الأوروبية ومع شريك أولاً، لزيادة المنازل المتاحة في السوق. وأي خدمة فعلية تخضع للتقييم التنظيمي.",
+        },
+      },
     ],
   },
 ];
