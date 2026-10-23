@@ -108,7 +108,7 @@ export default async function ProductPage({ params }: P) {
             </figure>
           )}
           {desktop.length > 1 && (
-            <div className={desktop.length > 2 ? "shots" : "shots one"}>
+            <div className={desktop.length === 2 ? "shots one" : desktop.length === 4 ? "shots three" : "shots"}>
               {desktop.slice(1).map((s) => (
                 <figure key={s.src} className="shot">
                   {/* eslint-disable-next-line @next/next/no-img-element */}

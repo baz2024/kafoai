@@ -29,8 +29,15 @@ export default async function Home({ params }: P) {
   if (!isLang(lang)) notFound();
   const latest = getInsights().slice(0, 3);
   const url = abs(`/${lang}`);
-  // One real screenshot each from three products, chosen from the manifest (skipped if absent).
-  const pick: [string, "desktop" | "mobile"][] = [["lasttable", "desktop"], ["omnirisk", "desktop"], ["circul", "mobile"]];
+  // One real screenshot per product, chosen from the manifest. A product with no screenshot yet is skipped.
+  const pick: [string, "desktop" | "mobile"][] = [
+    ["lasttable", "desktop"],
+    ["omnirisk", "desktop"],
+    ["rayachain", "desktop"],
+    ["growthos", "desktop"],
+    ["meithera", "desktop"],
+    ["circul", "mobile"],
+  ];
   const showcase = pick.flatMap(([slug, device]) => {
     const p = PRODUCTS.find((x) => x.slug === slug);
     const shot = getShots(slug, lang).find((s) => s.device === device);

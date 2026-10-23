@@ -186,5 +186,51 @@
       "device": "desktop",
       "source": "public demo website"
     }
+  ],
+  "growthos": [
+    {
+      "file": "/products/growthos/overview-metrics.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "KAFO AI pilot overview for a demo restaurant workspace, showing an approvals-waiting prompt, four metric cards (completed bookings, confirmed bookings, attendance rate, estimated revenue) with trend sparklines, a daily bookings bar chart and a needs-attention list, marked as synthetic demo data.",
+        "ar": "نظرة عامة على التجربة في كفو للذكاء الاصطناعي لمساحة عمل مطعم تجريبي، تعرض تنبيهًا بالموافقات المعلّقة وأربع بطاقات مؤشرات (الحجوزات المكتملة والمؤكدة ونسبة الحضور والإيراد التقديري) مع رسوم اتجاه، ومخططًا يوميًا للحجوزات وقائمة بما يحتاج انتباهًا، وكلها بيانات محاكاة."
+      },
+      "device": "desktop",
+      "source": "local demo data"
+    },
+    {
+      "file": "/products/growthos/agent-run-claims-check.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "A finished KAFO AI agent run on the Agents page, showing status Succeeded, cost, prompt version, a claims check that passed with no policy findings, and drafted outreach emails and a landing page tagged with the approved knowledge facts they cite. Demo data on a mock runtime.",
+        "ar": "تشغيل مكتمل لوكيل في كفو للذكاء الاصطناعي على صفحة الوكلاء، يعرض حالة النجاح والتكلفة وإصدار التوجيه ونتيجة فحص الادعاءات دون ملاحظات، ومسودات رسائل تواصل وصفحة هبوط موسومة بالحقائق المعتمدة التي استندت إليها. بيانات تجريبية على بيئة محاكاة."
+      },
+      "device": "desktop",
+      "source": "local demo data"
+    },
+    {
+      "file": "/products/growthos/approvals-diff.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "KAFO AI Approvals page for a demo workspace, showing a pending landing-page request with channel, budget and content hash, changed audience and copy highlighted against the last approved version, and a no claims findings check.",
+        "ar": "صفحة الموافقات في كفو للذكاء الاصطناعي لمساحة عمل تجريبية، تعرض طلب صفحة هبوط معلّقًا مع القناة والميزانية وبصمة المحتوى، وتُبرز تغييرات الجمهور والنص مقارنة بآخر نسخة موافق عليها، مع فحص خالٍ من ملاحظات الادعاءات."
+      },
+      "device": "desktop",
+      "source": "local demo data"
+    },
+    {
+      "file": "/products/growthos/agents-arabic.webp",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "KAFO AI Agents page in the Arabic right-to-left interface, showing three enabled agent roles (acquisition research and content, analytics and conversion, growth director) with their allowed tools, and a form to queue a task. Demo data, mock runtime.",
+        "ar": "صفحة الوكلاء في كفو للذكاء الاصطناعي بالواجهة العربية من اليمين إلى اليسار، تعرض ثلاثة أدوار مفعّلة للوكلاء (أبحاث الاستقطاب والمحتوى، التحليلات والتحويل، مدير النمو) مع الأدوات المسموح بها ونموذجًا لإضافة مهمة. بيانات تجريبية على بيئة محاكاة."
+      },
+      "device": "desktop",
+      "source": "local demo data"
+    }
   ]
 }

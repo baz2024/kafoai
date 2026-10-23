@@ -217,19 +217,22 @@ main { display: block; min-height: 60vh; padding-bottom: var(--s-8); }
 .shots .shot { margin-top: 0; }
 .shots.phones { grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 260px)); justify-content: center; }
 .shot.phone { border-radius: 28px; }
-@media (max-width: 720px) { .shots { grid-template-columns: minmax(0, 1fr); } }
+.shots.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 720px) { .shots, .shots.three { grid-template-columns: minmax(0, 1fr); } }
 
 /* Home: products in action */
-.showcase { display: grid; grid-template-columns: 1.35fr 1.35fr 0.8fr; gap: var(--s-5); align-items: stretch; }
+.showcase { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-6) var(--s-5); align-items: start; }
 .shot-card { display: flex; flex-direction: column; gap: var(--s-3); color: var(--text); text-decoration: none; }
 .shot-card .frame { display: block; aspect-ratio: 16 / 11; overflow: hidden; border: 1px solid var(--line-2); border-radius: var(--r-lg); background: var(--panel); box-shadow: var(--shadow-2); transition: border-color .2s, transform .2s; }
-.shot-card .frame.phone-frame { border-radius: 28px; aspect-ratio: auto; }
 .shot-card .frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
-.shot-card .frame.phone-frame img { height: auto; object-fit: initial; }
+/* Phone shots keep their whole screen, centred in a tile the same size as the desktop ones. */
+.shot-card .frame.phone-frame { display: flex; justify-content: center; align-items: stretch; padding: var(--s-4) 0; background: linear-gradient(180deg, var(--panel-2), var(--panel)); }
+.shot-card .frame.phone-frame img { width: auto; max-width: 100%; height: 100%; object-fit: contain; border-radius: 18px; border: 1px solid var(--line-2); }
 .shot-card:hover .frame { border-color: var(--signal); transform: translateY(-2px); }
 .shot-card .cap { display: flex; flex-direction: column; font-size: var(--fs-sm); color: var(--muted); }
 .shot-card .cap strong { color: var(--text); font-size: var(--fs-base); }
-@media (max-width: 900px) { .showcase { grid-template-columns: minmax(0, 1fr); } .shot-card .frame.phone-frame { max-width: 260px; } }
+@media (max-width: 960px) { .showcase { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .showcase { grid-template-columns: minmax(0, 1fr); } }
 @media (prefers-reduced-motion: reduce) { .shot-card .frame { transition: none; } .shot-card:hover .frame { transform: none; } }
 
 /* Home: the eighth tile that completes the 4-column product grid */
