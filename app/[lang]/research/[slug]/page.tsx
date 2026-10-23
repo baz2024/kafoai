@@ -11,14 +11,14 @@ type Params = { slug: string };
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return getPapers().map((p) => ({ slug: p.slug }));
+  return getPapers().map((p) => ({ lang: "en", slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { slug } = await params;
   const p = getPaper(slug);
   if (!p) return {};
-  const url = `/research/${p.slug}`;
+  const url = `/en/research/${p.slug}`;
   return {
     title: p.seoTitle,
     description: p.description,
@@ -44,7 +44,7 @@ export default async function PaperPage({ params }: { params: Promise<Params> })
   const { slug } = await params;
   const p = getPaper(slug);
   if (!p) notFound();
-  const url = abs(`/research/${p.slug}`);
+  const url = abs(`/en/research/${p.slug}`);
   const { html } = renderMarkdown(p.abstract);
 
   return (
@@ -71,32 +71,49 @@ export default async function PaperPage({ params }: { params: Promise<Params> })
           {
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-              { "@type": "ListItem", position: 2, name: "Research", item: abs("/research") },
+              { "@type": "ListItem", position: 1, name: "Home", item: abs("/en") },
+              { "@type": "ListItem", position: 2, name: "Research", item: abs("/en/research") },
               { "@type": "ListItem", position: 3, name: p.seoTitle, item: url },
             ],
           },
         ]}
       />
-      <nav className="crumbs" aria-label="Breadcrumb">
-        <Link href="/">Home</Link> / <Link href="/research">Research</Link>
-      </nav>
-      <h1>{p.title}</h1>
-      <p className="meta">
-        {p.authors.join(", ")} · <time dateTime={p.date}>{p.date}</time> · {p.status}
-      </p>
-      <h2>Summary</h2>
-      <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
-      <p className="meta">
-        <strong>Keywords:</strong> {p.keywords.join(", ")}
-      </p>
-      {p.paperUrl ? (
-        <p>
-          <a href={p.paperUrl}>Read the full paper (PDF) →</a>
+      <div className="wrap narrow page">
+        <nav className="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li>
+              <Link href="/en">Home</Link>
+            </li>
+            <li>
+              <Link href="/en/research">Research</Link>
+            </li>
+          </ol>
+        </nav>
+        <header className="article-head">
+          <h1>{p.title}</h1>
+          <p className="article-meta">
+            <span>{p.authors.join(", ")}</span>
+            <time className="dot" dateTime={p.date}>
+              {p.date}
+            </time>
+            <span className="dot">{p.status}</span>
+          </p>
+        </header>
+        <h2 style={{ marginTop: 0, fontSize: "1.375rem" }}>Summary</h2>
+        <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
+        <p className="meta" style={{ marginTop: "var(--s-6)" }}>
+          <strong>Keywords:</strong> {p.keywords.join(", ")}
         </p>
-      ) : (
-        <p className="meta">The full manuscript is not yet publicly available. Contact {SITE.name} for access.</p>
-      )}
+        {p.paperUrl ? (
+          <p>
+            <a className="btn" href={p.paperUrl}>
+              Read the full paper (PDF) →
+            </a>
+          </p>
+        ) : (
+          <p className="meta">The full manuscript is not yet publicly available. Contact {SITE.name} for access.</p>
+        )}
+      </div>
     </article>
   );
 }

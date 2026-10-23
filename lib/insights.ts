@@ -58,6 +58,11 @@ export function getInsight(slug: string) {
 export function renderMarkdown(src: string) {
   const marked = new Marked({ gfm: true }, gfmHeadingId());
   const html = marked.parse(src) as string;
-  const headings = getHeadingList().filter((h) => h.level === 2);
+  // The heading list carries HTML-escaped text; React escapes again on render, so decode it here.
+  const decode = (s: string) =>
+    s.replace(/&#39;|&apos;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+  const headings = getHeadingList()
+    .filter((h) => h.level === 2)
+    .map((h) => ({ ...h, text: decode(h.text) }));
   return { html, headings };
 }

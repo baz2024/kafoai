@@ -10,14 +10,14 @@ type Params = { slug: string };
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return getInsights().map((i) => ({ slug: i.slug }));
+  return getInsights().map((i) => ({ lang: "en", slug: i.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { slug } = await params;
   const a = getInsight(slug);
   if (!a) return {};
-  const url = `/insights/${a.slug}`;
+  const url = `/en/insights/${a.slug}`;
   return {
     title: a.title,
     description: a.description,
@@ -35,7 +35,7 @@ export default async function InsightPage({ params }: { params: Promise<Params> 
   const a = getInsight(slug);
   if (!a) notFound();
   const { html, headings } = renderMarkdown(a.body);
-  const url = abs(`/insights/${a.slug}`);
+  const url = abs(`/en/insights/${a.slug}`);
 
   return (
     <article>
@@ -59,34 +59,58 @@ export default async function InsightPage({ params }: { params: Promise<Params> 
           {
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-              { "@type": "ListItem", position: 2, name: "Insights", item: abs("/insights") },
+              { "@type": "ListItem", position: 1, name: "Home", item: abs("/en") },
+              { "@type": "ListItem", position: 2, name: "Insights", item: abs("/en/insights") },
               { "@type": "ListItem", position: 3, name: a.title, item: url },
             ],
           },
         ]}
       />
-      <nav className="crumbs" aria-label="Breadcrumb">
-        <Link href="/">Home</Link> / <Link href="/insights">Insights</Link>
-      </nav>
-      <h1>{a.title}</h1>
-      <p className="meta">
-        {a.category} · <time dateTime={a.date}>{a.date}</time> · {a.readingMinutes} min read
-      </p>
-      <p>{a.description}</p>
-      {headings.length > 2 && (
-        <nav aria-label="Contents" className="meta">
-          <strong>In this article</strong>
+      <div className="wrap narrow page">
+        <nav className="crumbs" aria-label="Breadcrumb">
           <ol>
-            {headings.map((h) => (
-              <li key={h.id}>
-                <a href={`#${h.id}`}>{h.text}</a>
-              </li>
-            ))}
+            <li>
+              <Link href="/en">Home</Link>
+            </li>
+            <li>
+              <Link href="/en/insights">Insights</Link>
+            </li>
           </ol>
         </nav>
-      )}
-      <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
+        <header className="article-head">
+          <h1>{a.title}</h1>
+          <p className="desc">{a.description}</p>
+          <p className="article-meta">
+            <span>{a.category}</span>
+            <time className="dot" dateTime={a.date}>
+              {a.date}
+            </time>
+            <span className="dot">{a.readingMinutes} min read</span>
+          </p>
+          {a.tags.length > 0 && (
+            <ul className="chips">
+              {a.tags.map((t) => (
+                <li key={t} className="tag">
+                  {t}
+                </li>
+              ))}
+            </ul>
+          )}
+        </header>
+        {headings.length > 2 && (
+          <nav aria-label="Contents" className="toc">
+            <strong>In this article</strong>
+            <ol>
+              {headings.map((h) => (
+                <li key={h.id}>
+                  <a href={`#${h.id}`}>{h.text}</a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        )}
+        <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
     </article>
   );
 }

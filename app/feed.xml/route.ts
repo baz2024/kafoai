@@ -11,7 +11,7 @@ export function GET() {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <title>${esc(SITE.name)} Insights</title>
-<link>${abs("/insights")}</link>
+<link>${abs("/en/insights")}</link>
 <description>${esc(SITE.description)}</description>
 <language>en</language>
 <atom:link href="${abs("/feed.xml")}" rel="self" type="application/rss+xml"/>
@@ -19,8 +19,8 @@ ${items
   .map(
     (i) => `<item>
 <title>${esc(i.title)}</title>
-<link>${abs(`/insights/${i.slug}`)}</link>
-<guid isPermaLink="true">${abs(`/insights/${i.slug}`)}</guid>
+<link>${abs(`/en/insights/${i.slug}`)}</link>
+<guid isPermaLink="true">${abs(`/en/insights/${i.slug}`)}</guid>
 <pubDate>${new Date(i.date).toUTCString()}</pubDate>
 <description>${esc(i.description)}</description>
 </item>`,
