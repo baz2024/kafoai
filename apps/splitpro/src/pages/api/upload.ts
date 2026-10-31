@@ -1,6 +1,5 @@
 import { randomUUID } from 'node:crypto';
 import fs from 'node:fs/promises';
-import path from 'node:path';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { getServerSession } from 'next-auth/next';
 import sharp from 'sharp';
@@ -9,15 +8,13 @@ import { authOptions } from '~/server/auth';
 import { env } from '~/env';
 
 import { type File, formidable } from 'formidable';
-import { fileExists } from '~/utils/file';
+import { saveFile } from '~/server/storage';
 
 export const config = {
   api: {
     bodyParser: false,
   },
 };
-
-const UPLOAD_DIR = path.join(process.cwd(), 'uploads');
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if ('POST' !== req.method) {
@@ -27,10 +24,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const session = await getServerSession(req, res, authOptions);
   if (!session?.user) {
     return res.status(401).json({ error: 'Unauthorized' });
-  }
-
-  if (!(await fileExists(UPLOAD_DIR))) {
-    await fs.mkdir(UPLOAD_DIR, { recursive: true });
   }
 
   const form = formidable({
@@ -49,26 +42,25 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 
     const userId = String(session.user.id);
-    const userDir = path.join(UPLOAD_DIR, userId);
-
-    if (!(await fileExists(userDir))) {
-      await fs.mkdir(userDir, { recursive: true });
-    }
 
     const fileUUID = randomUUID();
     const fileName = `${fileUUID}.webp`;
     const thumbName = `${fileUUID}-thumb.webp`;
-    const finalPath = path.join(userDir, fileName);
-    const thumbPath = path.join(userDir, thumbName);
 
     const fileBuffer = await fs.readFile(uploadedFile.filepath);
 
-    await sharp(fileBuffer)
-      .resize({ width: 1200, withoutEnlargement: true })
-      .webp({ quality: 80 })
-      .toFile(finalPath);
+    const [image, thumb] = await Promise.all([
+      sharp(fileBuffer)
+        .resize({ width: 1200, withoutEnlargement: true })
+        .webp({ quality: 80 })
+        .toBuffer(),
+      sharp(fileBuffer).resize(200).webp({ quality: 60 }).toBuffer(),
+    ]);
 
-    await sharp(fileBuffer).resize(200).webp({ quality: 60 }).toFile(thumbPath);
+    await Promise.all([
+      saveFile(`${userId}/${fileName}`, image, 'image/webp'),
+      saveFile(`${userId}/${thumbName}`, thumb, 'image/webp'),
+    ]);
 
     return res.status(200).json({
       key: `${userId}/${fileName}`,

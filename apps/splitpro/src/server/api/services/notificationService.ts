@@ -273,7 +273,8 @@ export async function sendGroupSimplifyDebtsToggleNotification(
   }
 }
 
-export async function checkRecurrenceNotifications() {
+/** Sends push notifications for recurring expenses created since the last check. */
+export async function sendPendingRecurrenceNotifications() {
   try {
     const recurrences = await db.expenseRecurrence.findMany({
       where: {
@@ -307,7 +308,11 @@ export async function checkRecurrenceNotifications() {
     );
   } catch (e) {
     console.error('Error sending recurrence notifications', e);
-  } finally {
-    setTimeout(checkRecurrenceNotifications, 1000 * 60); // Check every minute
   }
+}
+
+/** Long-running servers (Docker): poll every minute. Serverless hosts use /api/cron instead. */
+export async function checkRecurrenceNotifications() {
+  await sendPendingRecurrenceNotifications();
+  setTimeout(checkRecurrenceNotifications, 1000 * 60);
 }

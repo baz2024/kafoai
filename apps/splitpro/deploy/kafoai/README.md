@@ -1,4 +1,6 @@
-# SplitPro on split.kafoai.com
+# SplitPro on split.kafoai.com (Docker)
+
+> **Deploying on Vercel instead?** See [`../vercel/README.md`](../vercel/README.md).
 
 This is SplitPro, an expense-splitting app like Splitwise. It is deployed as its own app on a subdomain and linked from the KafoAI sidebar. It supports Arabic: the language picker includes **العربية**, and the whole UI switches to right-to-left with an Arabic font.
 
