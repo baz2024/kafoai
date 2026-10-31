@@ -1,4 +1,4 @@
-splitpro.kafoai.com {
+split.kafoai.com {
 	encode zstd gzip
 	reverse_proxy splitpro:3000
 }

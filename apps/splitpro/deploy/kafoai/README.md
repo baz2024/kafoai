@@ -1,10 +1,10 @@
-# SplitPro on splitpro.kafoai.com
+# SplitPro on split.kafoai.com
 
 This is SplitPro, an expense-splitting app like Splitwise. It is deployed as its own app on a subdomain and linked from the KafoAI sidebar. It supports Arabic: the language picker includes **العربية**, and the whole UI switches to right-to-left with an Arabic font.
 
 ## 1. DNS
 
-Add an `A` record: `splitpro.kafoai.com` → your server's public IP.
+Add an `A` record: `split.kafoai.com` → your server's public IP.
 If you use Cloudflare, set SSL to **Full (strict)**.
 
 ## 2. Configure
@@ -24,13 +24,13 @@ docker compose up -d --build
 docker compose logs -f splitpro
 ```
 
-Caddy gets a TLS certificate automatically. Open https://splitpro.kafoai.com.
+Caddy gets a TLS certificate automatically. Open https://split.kafoai.com.
 
 If KafoAI already runs nginx, remove the `caddy` service and use:
 
 ```nginx
 server {
-  server_name splitpro.kafoai.com;
+  server_name split.kafoai.com;
   listen 443 ssl;   # plus your certificate lines
   location / {
     proxy_pass http://127.0.0.1:3000;   # publish port 3000 on the splitpro service
@@ -49,7 +49,7 @@ Add one item to the sidebar's nav config. In React it looks something like this:
 import { Wallet } from 'lucide-react';
 
 { label: t('sidebar.splitpro'), // en: "Split Expenses", ar: "تقسيم المصاريف"
-  href: `https://splitpro.kafoai.com/${locale === 'ar' ? 'ar' : 'en'}/balances`,
+  href: `https://split.kafoai.com/${locale === 'ar' ? 'ar' : 'en'}/balances`,
   icon: Wallet,
   external: true }
 ```

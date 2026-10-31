@@ -1,4 +1,4 @@
-# SplitPro for KafoAI — served at https://splitpro.kafoai.com
+# SplitPro for KafoAI — served at https://split.kafoai.com
 # Builds from this repo (includes the Arabic/RTL changes not in the upstream image).
 name: splitpro-kafoai
 
@@ -44,7 +44,7 @@ services:
       - uploads:/app/uploads
 
   # TLS + reverse proxy. Remove this service if you already run nginx/Traefik/Cloudflare
-  # in front of the server — then just proxy splitpro.kafoai.com -> splitpro:3000.
+  # in front of the server — then just proxy split.kafoai.com -> splitpro:3000.
   caddy:
     image: caddy:2.8
     container_name: splitpro-caddy
